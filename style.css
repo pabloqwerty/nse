@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*** HEADER IMG menu ***/
+header{
+    text-align: center;
+    flex-wrap: nowrap;
+}
+header img {
+    width: 98%;
+    padding-top: 1%;
+    height: 100%;
+}
+h1 {
+    font-weight: 400;
+    margin: 10px;
+    text-align: center;
+}
+ul {
+    margin: 20px;
+    list-style: none;
+}
+li {
+    font-size: small;
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 2px;
+}
+.menu .active {
+    color: black;
+}
+.menu a {
+    padding: 10px;
+    color: rgb(5, 5, 7);
+    transition: ease-in .2s;
+}
+.menu a:hover {
+    background-color: darkgrey;
+}
+.menu li {
+    display: list-item;
+}
+
+/*** Carrousel INDEX ***/
+.preview {
+    font-size: small;
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+    background-color: rgba(160, 79, 16, 0.6);
+    color: white;
+}
+.carrousel img{
+    border: 1px solid  black
+}
+
+/*** MAIN ***/
+.main-container {
+    grid-area: 2 / 1 / 5 / 6;
+    margin: 0 auto;
+    width: 90%;
+}
+.main-container img {
+    width: 100%;
+    height: 100%;
+}
+
+/***** GRID Style *****/ 
+.gridContainer {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    display: contents;
+
+}
+/* divisiones visibles  */
+/*.gridContainer div{
+    border: 1px solid black;
+}*/
+.headContainer{
+    grid-area: 1 / 1 / 2 / 6;
+}
+
+
+.servicios ul {
+    font-size: small;
+    padding: 10px;
+    display: auto;
+    margin: 2px;
+    list-style: circle;
+}
+.center{
+    text-align: center;
+}
+.link:hover{
+    background-color: darkgrey;
+    color:black;
+}
+.legend {
+    background-color: lightgray;
+    text-align: center;
+    color: black;
+    font-size: large;
+    margin: 10px;
+
+}
+.title{
+    color: black;
+    padding-top: 20px;
+}
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: blanchedalmond;
+    color: darkblue;
+    overflow: hidden;
+    
+}
+.imgNosotros {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+.black{
+    color: black;
+}
+
+.options {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/*** FORM y FOOTER ***/
+.forms{
+    display: flex;
+    overflow: hidden;
+}
+.form__contacto {
+    margin: 20px;
+    padding: 10px;
+    width: 70%;
+    background-color: rgba(160, 79, 16, 0.7);
+    color: black;
+    box-shadow: 1px 2px 5px black;
+}
+.sugerencia{
+    background-color: rgba(61, 33, 11, 0.6);
+}
+.form__contacto h4 {
+    margin: 0px 10px 10px 10px;
+    font-size: large;
+}
+.form__input {
+    background-color: lightgray;
+    border: 1px solid brown;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    width: 100%;
+    padding: 10px;
+    font-size: small;
+    color: black;
+}
+.form__contacto p {
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+.form__contacto .button {
+    width: 100%;
+    margin: 16px 0;
+    padding: 10px;
+    background-color: rgb(187, 201, 160);
+}
+.form__contacto .button:hover {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+} 
+.gracias {
+    font-weight: bold;
+}
+.footer1 {
+    grid-area: 5 / 1 / 6 / 6;
+    color: black;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3px 0px 3px 0px ;
+    background-color: rgba(160, 79, 16, 0.3);
+    margin: 5px;
+}
+footer div {
+    margin: 2px;
+}
+
+/*** MEDIA QUERY ***/
+@media (min-width: 1000px) {
+    .logoMarca .fotoMarca {
+        width: 1000px;
+    }
+    .main-container {
+        width: 900px;
+    }
+    .footerContainer{
+        display: flex;
+        justify-content: center;
+    }
+    .footer1 {
+        width: 1000px;
+        ;
+    }
+} 
+/* responsive menu */
+@media (min-width:486px) {
+    .menu li { 
+        display: inline-block;
+    }
+    .options {
+        width: auto;
+    }
+}
+/* responsive BIO IMG */
+@media (max-width:485px) {
+    .imgNosotros { 
+        width: fit-content;
+    }
+    .gridContainer div {
+        padding: 5px;
+        height: fit-content;
+    }
+}
