@@ -15,4 +15,3 @@ To be determined.
 
 
 > Contacto test@nse.com
-```
