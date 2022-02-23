@@ -1,7 +1,7 @@
 {
-  "name": "test",
+  "name": "nse",
   "version": "1.0.0",
-  "description": "��n\u0000s\u0000e\u0000\r\u0000 \u0000",
+  "description": "nse photography",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

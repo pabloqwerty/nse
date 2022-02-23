@@ -279,9 +279,13 @@ footer div {
     float: inherit;
     width: auto; } }
 
-@media (max-width: 430px) {
+@media screen and (max-width: 600px) {
   .forms {
-    display: block; } }
+    display: inline-block; }
+  .menu .active {
+    display: none; }
+  .menu .nav-item {
+    height: 40px; } }
 
 @media only screen and (max-width: 767px) {
   .header-section .container-fluid {

@@ -347,16 +347,23 @@ footer div {
 }
 
 @media (min-width: map-get($default, mil)) {
-    .byside {
+    .byside { 
         float: inherit;
         width: auto; 
     } 
 }
 
-@media (max-width: 430px) {
-    .forms {
-        display: block; 
-    } 
+@media screen and (max-width: 600px) {
+    .forms  {
+        display:inline-block;
+    }
+    .menu .active {
+        display:none;
+    }
+    .menu .nav-item {
+            height: 40px;
+        
+    }
 }
 
 @if $vista == mobile {
